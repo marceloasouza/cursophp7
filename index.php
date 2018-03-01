@@ -70,12 +70,25 @@ require_once("config.php");
 
 	// Criando Update 
 
+	//$usuario = new Usuario();
+
+	//$usuario->loadById(7);
+
+	//$usuario->update("Tavares", "4444");
+
+	//echo $usuario;
+
+	
+
+	// Deletando usuario
+
 	$usuario = new Usuario();
 
 	$usuario->loadById(7);
 
-	$usuario->update("Tavares", "4444");
+	$usuario->delete();
 
 	echo $usuario;
+
 
  ?>
