@@ -7,11 +7,17 @@ require_once("config.php");
     //$root->loadById(3);
   //  echo $root;
 
+
+
+
 	// carrega uma lista de usuario
 
 	//$lista = Usuario::getList();
 
 	//echo json_encode($lista);
+
+
+
 
 
 	//carregar lista de usuarios buscando pelo login
@@ -20,10 +26,42 @@ require_once("config.php");
 
 	//echo json_encode($search);
 
+
+
+
+
 	//carregar usuario com autenticação
 
-	$usuario = new Usuario();
-	$usuario->login("Marcelo Souza", "7777");
+	//$usuario = new Usuario();
+	//$usuario->login("Marcelo Souza", "7777");
 
-	echo $usuario;
+	//echo $usuario;
+
+
+
+
+
+
+	//Inserindo no banco com procedures
+
+	//$aluno = new Usuario();
+
+	//$aluno->setDeslogin("Vitor");
+	//$aluno->setDessenha("2222");
+
+	//$aluno->insert();
+
+	//echo $aluno;
+
+
+
+
+	//Inserindo com metodo construtor
+	
+	$aluno = new Usuario("Marcio", "3333");
+
+	$aluno->insert();
+
+	echo $aluno;
+
  ?>
