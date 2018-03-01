@@ -58,10 +58,24 @@ require_once("config.php");
 
 	//Inserindo com metodo construtor
 	
-	$aluno = new Usuario("Marcio", "3333");
+	//$aluno = new Usuario("Marcio", "3333");
 
-	$aluno->insert();
+	//$aluno->insert();
 
-	echo $aluno;
+	//echo $aluno;
+
+
+
+
+
+	// Criando Update 
+
+	$usuario = new Usuario();
+
+	$usuario->loadById(7);
+
+	$usuario->update("Tavares", "4444");
+
+	echo $usuario;
 
  ?>
